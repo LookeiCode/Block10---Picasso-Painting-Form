@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Picasso Painting</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <style>
+        /*Styles for the images wrapped in a div tag (centers them in the page)*/
+      #threepics {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+      #bigpic {
+        display: flex;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>PICASSO PAINTINGS</h1></br>
+
+    <!--PICTURE SECTIONS-->
+    <!--Had to use internal CSS, inline wouldn't work for some reason for <img> tags-->
+    <div id="threepics">
+        <img src ="https://nnart.org/wp-content/uploads/2023/02/cubism-bird-painting-1200x900.webp" style="width: 400px; height: 300px;"></img>
+        <img src ="https://www.artmajeur.com/medias/hd/g/a/gabrieledonelli/artwork/7154860_ritratto-di-pablo-picasso-ottobre-2009-acrilico-su-pannello-telato-70-x-50-cm.jpg?v=1655049883" style="width: 400px; height: 300px;"></img>
+        <img src ="https://media.architecturaldigest.com/photos/6054f6d5b1a16752e2a94e24/16:9/w_1519,h_854,c_limit/4%20%20%C2%A9%20akg-images%EF%80%A2Andre%CC%81%20Held%20%EF%80%A2%202019%20Estate%20of%20Pablo%20Picasso%20%EF%80%A2%20Artists%20Rights%20Society%20(ARS),%20New%20York.jpg" style="width: 400px; height: 300px;"></img>
+    </div></br>
+    <div id="bigpic">
+    <img src ="https://cdn.britannica.com/79/91479-050-24F98E12/Guernica-canvas-Pablo-Picasso-Madrid-Museo-Nacional-1937.jpg" style="width: 100%; height: 300px; padding-left: 85px; padding-right: 85px;"></img>
+    </div></br>
+
+    <!--FORM SECTION-->
+    <!--Form wrapped in a div that moves it towards the center via padding-->
+    <div style="padding-left: 455px;">
+    <form action="formSubmit.html">
+
+        <h3 style="text-decoration: underline; text-align: center;">Please fill out the form below</h3>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <div id="submit">
+        <input type="submit" value="Submit" style="height:50px; width:150px">
+        </div><br>
+
+    </form>
+    </div>
+</body>
+</html>

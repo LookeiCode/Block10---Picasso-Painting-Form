@@ -1,0 +1,34 @@
+/*Styles the form. Centers it on the page and gives it a border*/
+form {
+    border: solid;
+    width: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-width: 5px;
+}
+/*Creates a heading at the top of the page for athestics*/
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 3rem;
+    text-align: center;
+}
+/*Centers the submit input button on the form*/
+#submit {
+    text-align: center;
+}
+/*Positions the labels in the form neatly under the heading*/
+label {
+    padding-left: 30px;
+}
+/*Aligns the input fields and puts them under the labels neatly*/
+input {
+    margin-left: 30px;
+    width: 250px;
+}
+
+/*@media (max-width: 768px) {
+    Desktop
+    height: 34; 
+}*/
